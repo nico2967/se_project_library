@@ -4,7 +4,7 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0 auto;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
 .header {
@@ -279,7 +279,7 @@
 
 .membership {
   padding: 100px;
-  background-color: #838383;
+  background-color: #f2f2f2;
 }
 
 .membership__title {
@@ -307,7 +307,7 @@
 
 .about {
   display: flex;
-  background: black;
+  background: #1f1f1f;
   padding: 80px 0 80px 80px;
   position: relative;
   overflow: hidden;
@@ -345,7 +345,7 @@
 }
 
 .footer {
-  background-color: #000000;
+  background-color: #1f1f1f;
   color: white;
   flex-direction: row;
   justify-content: space-between;
