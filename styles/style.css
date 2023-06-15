@@ -20,9 +20,7 @@
 
 .nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-top: 8px;
 }
 
 .logo {
@@ -45,21 +43,16 @@
 }
 
 .header__title {
-  margin-top: 150px;
+  margin: 150px 0 0;
   max-width: 544px;
   font-size: 66px;
   line-height: 76px;
   font-weight: 500;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .header__description {
-  margin-bottom: 32px;
+  margin: 32px 0 0;
   max-width: 532px;
-  flex-direction: column;
-  align-items: flex-start;
   font-size: 20px;
   line-height: 30px;
 }
@@ -245,13 +238,16 @@
 }
 
 .staff__title {
-  justify-content: center;
+  margin-top: 0px;
   color: white;
 }
 
 .staff__subtitle {
   color: white;
   margin-bottom: 68px;
+  margin-top: 0px;
+  line-height: 30px;
+  font-size: 20px;
 }
 .card__content {
   display: flex;
@@ -265,6 +261,11 @@
   box-sizing: border-box;
   width: 360px;
   height: 420px;
+}
+
+.card__title {
+  line-height: 30px;
+  font-size: 20px;
 }
 
 .staff__cards {
@@ -293,7 +294,8 @@
 
 .membership__steps {
   list-style-type: none;
-  padding: 0;
+  padding: 0px 0 0;
+  margin: 0px 0 0;
   display: flex;
   flex-direction: row;
   flex-basis: initial;
@@ -302,7 +304,7 @@
 }
 
 .step {
-  max-width: 220px;
+  flex-basis: 220px;
 }
 
 .about {
@@ -312,11 +314,15 @@
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
-  z-index: -1;
+  z-index: 1;
+}
+
+.about__paragraph {
+  column-gap: 32px;
 }
 
 .about__title {
-  width: auto;
+  max-width: 154px;
   white-space: nowrap;
   color: white;
   z-index: 1;
@@ -339,7 +345,7 @@
   width: 495px;
   height: 495px;
   border-radius: 50%;
-  /* z-index: 0; */
+  z-index: -1;
   top: -121px;
   left: -91px;
 }
@@ -347,12 +353,11 @@
 .footer {
   background-color: #1f1f1f;
   color: white;
-  flex-direction: row;
-  justify-content: space-between;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 80px;
   padding-right: 102px;
+  box-sizing: border-box;
 }
 
 .footer__column-link:hover {
@@ -361,8 +366,6 @@
 
 .footer__columns {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
 }
 
 .footer__column {
@@ -381,6 +384,7 @@
 }
 .footer__column-heading {
   margin: 0 0 20px;
+  font-size: 16px;
 }
 
 .footer__column_content_hours {
@@ -395,7 +399,7 @@
   list-style-type: none;
 }
 .footer__copyright {
-  margin-top: 0;
+  margin: 108px 0 0;
 }
 
 .nav__link:hover {
@@ -405,4 +409,9 @@
 .footer__social-icon {
   width: 16px;
   height: 16px;
+  margin-right: 10px;
+}
+
+.footer__column-link {
+  text-decoration: none;
 }
